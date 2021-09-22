@@ -5,6 +5,7 @@ let docHtml = document.getElementById("produitContent");
 let selecChoice = document.getElementById("lense");
 
 fetch(`https://orinocuapi.herokuapp.com/api/cameras/${id}`)
+
   .then((response) => response.json())
   //
   .then((data) => {
