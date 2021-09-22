@@ -1,0 +1,196 @@
+// Variables
+
+$pastel: #EBF6FF;
+
+//
+
+* a {
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+}
+
+.body {
+    width: 100%;
+    max-height: 100vh;
+    font-family: 'Roboto';
+}
+
+h1,
+h2 {
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    font-family: 'Lora', serif;
+    font-size: 2em;
+}
+
+.header-logo {
+    width: 30%;
+    height: auto;
+}
+
+/* --- NavBar --- */
+
+.navbar {
+    background-color: #6F1E9D;
+}
+
+
+/* --- main   --- */
+#main {
+    width: 100%;
+    height: 100%;
+    padding: 5% 1% 5%;
+}
+
+.container {
+    height: auto;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    @media screen and (max-width: 767px) {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 5% auto 2%;
+    }
+
+}
+
+#produitContent {
+    width: 80%;
+    height: auto;
+    margin: 3% auto 3%;
+}
+
+.secondBack {
+    background-color: $pastel;
+    width: 90%;
+    height: auto;
+    margin: auto;
+}
+
+.info {
+    font-family: "Lato";
+}
+
+.card {
+    width: 50%;
+    height: auto;
+    display: flex;
+    flex: 0 25%;
+    margin: 0 1% 2%;
+    background-color: $pastel;
+    border-radius: 0 0 10px 10px;
+}
+
+.img-thumbnail {
+    max-width: 100%;
+    height: auto;
+}
+
+.card-img-cart {
+    max-width: 100%;
+    height: auto;
+}
+
+/* --- Page panier   --- */
+
+#table {
+    width: 80%;
+    height: auto;
+    margin: 5% auto 5%;
+}
+
+#table .produit {
+    width: 20%;
+}
+
+#tableTotalPanier {
+    margin: 2% 15% 5%;
+}
+
+[required] {
+    border: 1px solid rgb(143, 98, 247);
+}
+
+
+section {
+    width: 100%;
+    height: auto;
+}
+
+tr,
+td,
+th {
+    border: 1px solid rgb(155, 154, 154);
+}
+
+th {
+    text-align: center;
+    background-color: #6F1E9D;
+    color: white;
+}
+
+.form-group {
+    width: 60%;
+    display: flex;
+    margin-top: 2%;
+    flex-direction: column;
+    color: #28053d;
+    font-weight: 800;
+    font-size: 1.2em;
+}
+
+.form-group-validation {
+    width: 100%;
+    padding: 2% 0 3%;
+    margin: 2% auto 0;
+}
+
+input {
+    background-color: $pastel;
+    border: 1px solid rgba(121, 9, 173, 0.301);
+    height: 6vh;
+    border-radius: 5px;
+
+    &::placeholder {
+        padding: 2rem 0 2rem;
+        color: #adadadb9;
+    }
+}
+
+.btn {
+    background-color: #6F1E9D;
+    border: 3px solid #6F1E9D;
+    color: white;
+}
+
+#deleteItem {
+    margin: auto 5% auto;
+    color: rgba(177, 5, 5, 0.877);
+    border: none;
+}
+
+.btn:hover {
+    background-color: #8c26c7;
+    color: #ffffff;
+    border: 3px solid #6F1E9D;
+    box-shadow: 0px 15px 20px rgba(124, 124, 124, 0.4);
+}
+
+.orderConfirmationText {
+    width: 80%;
+    background-color: $pastel;
+}
+
+.footer {
+    background-color: #6F1E9D;
+    width: 100%;
+    height: auto;
+    bottom: 0;
+}
